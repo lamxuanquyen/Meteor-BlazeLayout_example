@@ -1,0 +1,28 @@
+<template name="dsKhuTro">
+    <h3>Danh sach khu tro</h3>
+
+    <a href="/khu-tro/them-moi" class="btn btn-success">Them moi</a>
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>
+              Ten khu tro
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+          {{#each items}}
+            <tr>
+                <td>
+                    {{ name }}
+                </td>
+                <td>
+                    <a href="{{ pathFor 'khutro.edit' _id=_id }}" class="btn btn-primary">Edit</a>
+                    <button type="button" class="btnRemove btn btn-danger">Remove</button>
+                </td>
+            </tr>
+          {{/each}}
+      </tbody>
+    </table>
+</template>

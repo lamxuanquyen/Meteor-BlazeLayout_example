@@ -1,0 +1,13 @@
+<template name="formKhuTro">
+  {{#with khu}}
+    <form >
+        <legend>Khu Tro</legend>
+        <div class="form-group">
+            <label for="name">Ten khu tro</label>
+            <input type="text" class="form-control" id="name" value="{{name}}" placeholder="vui long nhap khu tro...">
+        </div>
+
+        <button type="submit" class="btn btn-primary">luu</button>
+    </form>
+  {{/with}}
+</template>
